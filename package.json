@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "gh-pages": "^2.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-image-timeline": "^3.1.9",
@@ -16,7 +17,10 @@
     "react-vertical-timeline-component": "^2.5.0",
     "vertical-timeline-component-for-react": "^1.0.6"
   },
+  "homepage": "https://MaxZarubin.github.io/timeline",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
